@@ -1,27 +1,20 @@
 <template>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">WebSiteName</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
+  <div class="baby">
+      <div class="container-fluid navbarSh">
+        <div class="container">
+          <div class="justify-content-around d-flex">
+          <ul class="list-inline d-flex first-nav">
+            <li><i class="fa fa-user-circle-o" aria-hidden="true"></i><a href="#" class="mr-4 text-decoration-none"> حساب من</a></li>
+            <li> <a href="#" class="text-decoration-none"><i class="fa fa-comments" aria-hidden="true"></i> چت های من </a></li>
           </ul>
-        </li>
-        <li><a href="#">Page 2</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </nav>
-
+          <ul class="list-inline text-right d-flex first-nav">
+            <li><a href="#" class="text-decoration-none">همه آگهی ها</a></li>
+            <li><a href="#" class="ml-4 text-decoration-none">پشتیبانی</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+  </div>
 </template>
 
 <script>
@@ -31,10 +24,29 @@
 </script>
 
 <style scoped>
-  .navbar {
-    height: 30px;
-    font-size:15px;
-    //WhatAreYou
+  .baby{
+    font-family: 'B Yekan',serif;
+  }
+  .navbarSh {
+    height: 25px !important;
+    background: #d5e2e8;
+    border : none;
+    border-radius: 0px;
+  }
+  .first-nav li a{
+    color: #828283;
+  }
+  .first-nav li{
+    color: #828283;
+  }
+  .first-nav li a:hover{
+    color: #bf5a18 !important;
+    text-decoration: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .navbarSh {
+      display: none;
+    }
   }
 </style>
 
@@ -76,5 +88,3 @@
 <!--    </b-collapse>-->
 <!--  </b-navbar>-->
 <!--</b-container>-->
-
-
