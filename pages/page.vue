@@ -14,12 +14,17 @@
           </div>
         </div>
       </div>
+    <header-b-t>
+
+    </header-b-t>
   </div>
 </template>
 
 <script>
+  import HeaderBT from "../components/headerBT";
   export default {
-    name: "page"
+    name: "page",
+    components: {HeaderBT}
   }
 </script>
 
