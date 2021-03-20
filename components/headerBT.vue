@@ -5,8 +5,7 @@
         <div class="searchfield row d-flex flex-row-reverse m-0">
           <div class="row m-0 col-8 p-0">
             <div class="col-10 d-flex align-items-center p-0">
-              <input type="text" class="form-control bg-transparent border-0 text-sm-right p-1" placeholder="جستجو..."
-                     dir="rtl">
+              <input type="text" class="form-control bg-transparent border-0 text-sm-right p-1" placeholder="جستجو..." dir="rtl">
             </div>
             <div class="col-2 p-0 d-flex align-items-center justify-content-center">
               <button class="btn d-flex p-0">
