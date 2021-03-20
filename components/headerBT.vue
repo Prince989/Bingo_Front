@@ -1,18 +1,5 @@
 <template>
   <div>
-    <!--    <div class="row headerbt-m">-->
-    <!--      <button class="btn chatbtn text-secondary col-3"><i class="fa fa-comments" style=""></i></button>-->
-    <!--      <div class="searchbar form-group text-right row flex-wrap d-flex flex-row align-items-center mr-1 col-9 mt-1">-->
-    <!--        <span class="col-1 p-1 d-flex mr-auto text-left mt-2">-->
-    <!--        <i class="fas fa-map-marker-alt text-secondary col-6 mr-auto marker"></i>-->
-    <!--        <label class="text-secondary col-6 text-nowrap"-->
-    <!--               style="font-size: 14px!important;">همه ایران</label>-->
-    <!--          </span>-->
-    <!--        <input type="text" class="form-control text-right bg-transparent ml-auto mt-auto mb-auto w-auto col-9 "-->
-    <!--               placeholder="...جستجو">-->
-    <!--        <button class="btn bar pr-0 col-2 ml-auto"><i class="fas fa-bars text-secondary  mt-1 "></i></button>-->
-    <!--      </div>-->
-    <!--    </div>-->
     <div class="row flex-row-reverse headerbt-m d-flex  align-items-center p-0">
       <div class="col-10 h-75 d-flex align-items-center justify-content-center m-0 p-0">
         <div class="searchfield row d-flex flex-row-reverse m-0">
