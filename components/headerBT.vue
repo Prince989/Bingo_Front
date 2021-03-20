@@ -24,12 +24,6 @@
               </span>
             </div>
           </div>
-          <!--          <div class="col-3 row d-flex flex-row-reverse flex-nowrap align-items-center">-->
-          <!--            <small class="col-6 w-auto ">-->
-          <!--              <label class="text-secondary text-center text-nowrap position-static">همه ایران</label>-->
-          <!--            </small>-->
-          <!--            <i class="fas fa-map-marker-alt text-secondary col-6"></i>-->
-          <!--          </div>-->
         </div>
       </div>
       <div class="col-2 align-items-center d-flex justify-content-end p-0 m-0">
