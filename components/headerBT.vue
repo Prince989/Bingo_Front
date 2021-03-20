@@ -1,16 +1,54 @@
 <template>
   <div>
-    <div class="row headerbt-m">
-      <button class="btn chatbtn text-secondary col-3"><i class="fa fa-comments" style=""></i></button>
-      <div class="searchbar form-group text-right row flex-wrap d-flex flex-row align-items-center mr-1 col-9 mt-1">
-        <span class="col-1 p-1 d-flex mr-auto text-left mt-2">
-        <i class="fas fa-map-marker-alt text-secondary col-6 mr-auto marker"></i>
-        <label class="text-secondary col-6 text-nowrap"
-               style="font-size: 14px!important;">همه ایران</label>
-          </span>
-        <input type="text" class="form-control text-right bg-transparent ml-auto mt-auto mb-auto w-auto col-9 "
-               placeholder="...جستجو">
-        <button class="btn bar pr-0 col-2 ml-auto"><i class="fas fa-bars text-secondary  mt-1 "></i></button>
+    <!--    <div class="row headerbt-m">-->
+    <!--      <button class="btn chatbtn text-secondary col-3"><i class="fa fa-comments" style=""></i></button>-->
+    <!--      <div class="searchbar form-group text-right row flex-wrap d-flex flex-row align-items-center mr-1 col-9 mt-1">-->
+    <!--        <span class="col-1 p-1 d-flex mr-auto text-left mt-2">-->
+    <!--        <i class="fas fa-map-marker-alt text-secondary col-6 mr-auto marker"></i>-->
+    <!--        <label class="text-secondary col-6 text-nowrap"-->
+    <!--               style="font-size: 14px!important;">همه ایران</label>-->
+    <!--          </span>-->
+    <!--        <input type="text" class="form-control text-right bg-transparent ml-auto mt-auto mb-auto w-auto col-9 "-->
+    <!--               placeholder="...جستجو">-->
+    <!--        <button class="btn bar pr-0 col-2 ml-auto"><i class="fas fa-bars text-secondary  mt-1 "></i></button>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <div class="row flex-row-reverse headerbt-m d-flex  align-items-center p-0">
+      <div class="col-10 h-75 d-flex align-items-center justify-content-center m-0 p-0">
+        <div class="searchfield row d-flex flex-row-reverse m-0">
+          <div class="row m-0 col-8 p-0">
+            <div class="col-10 d-flex align-items-center p-0">
+              <input type="text" class="form-control bg-transparent border-0 text-sm-right p-1" placeholder="جستجو..."
+                     dir="rtl">
+            </div>
+            <div class="col-2 p-0 d-flex align-items-center justify-content-center">
+              <button class="btn d-flex p-0">
+                <i class="fas fa-bars text-secondary"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row m-0 col-4 p-0">
+            <div class="col-4 p-0 m-0 d-flex align-items-center justify-content-center">
+              <i class="fas fa-map-marker-alt text-secondary marker" style="font-size: 15px"></i>
+            </div>
+            <div class="col-8 p-0 m-0 text-nowrap text-secondary align-items-center d-flex">
+              <span style="font-size: 13px">
+                همه ایران
+              </span>
+            </div>
+          </div>
+          <!--          <div class="col-3 row d-flex flex-row-reverse flex-nowrap align-items-center">-->
+          <!--            <small class="col-6 w-auto ">-->
+          <!--              <label class="text-secondary text-center text-nowrap position-static">همه ایران</label>-->
+          <!--            </small>-->
+          <!--            <i class="fas fa-map-marker-alt text-secondary col-6"></i>-->
+          <!--          </div>-->
+        </div>
+      </div>
+      <div class="col-2 align-items-center d-flex justify-content-end p-0 m-0">
+        <button class="btn m-0 p-0 d-flex justify-content-center" style="font-size: 19px">
+          <i class="fa fa-comments align-content-center text-secondary text-right" aria-hidden="true"></i>
+        </button>
       </div>
     </div>
     <div class="headerbt">
@@ -61,7 +99,8 @@
           </select>
         </div>
         <div class="col-1">
-          <button class="btn btn-primary w-100 d-flex align-items-center"> <span>جستجو</span> &nbsp;&nbsp; <i class="fas fa-search"></i> </button>
+          <button class="btn btn-primary w-100 d-flex align-items-center"><span>جستجو</span> &nbsp;&nbsp; <i
+            class="fas fa-search"></i></button>
         </div>
       </div>
     </div>
@@ -80,18 +119,22 @@
     color: rgba(234, 248, 255, 0.85);
     box-shadow: rgba(78, 85, 91, 0.22) 1px 1px 1px 0.8px;
   }
-  .col-5{
-    padding:0px;
-    margin:0px;
+
+  .col-5 {
+    padding: 0px;
+    margin: 0px;
   }
-  .col-3{
-    padding:0px;
-    margin:0px;
+
+  .col-3 {
+    padding: 0px;
+    margin: 0px;
   }
-  .col-1{
-    padding:0px;
-    margin:0px;
+
+  .col-1 {
+    padding: 0px;
+    margin: 0px;
   }
+
   .container {
     padding-right: 50px;
     padding-left: 50px;
@@ -109,15 +152,19 @@
     box-shadow: 1px 1px 10px rgba(78, 85, 91, 0.19);
     border-radius: 5px;
   }
-  .filter div select{
+
+  .filter div select {
     border-radius: 0;
   }
-  .filter div button{
+
+  .filter div button {
     border-radius: 5px 0 0 5px;
   }
-  .filter div input{
+
+  .filter div input {
     border-radius: 0 5px 0 0;
   }
+
   @media only screen and (max-width: 600px) {
     .headerbt {
       display: none;
@@ -126,8 +173,23 @@
 
   @media only screen and (min-width: 601px) {
     .headerbt-m {
-      display: none;
+      display: none !important;
     }
+  }
+
+  .searchfield {
+    border-radius: 7px;
+    height: 85%;
+    width: 80%;
+    background-color: #eeeeee;
+  }
+
+  .searchfield div div input {
+    font-size: small;
+  }
+
+  .searchfield div div input:hover {
+    box-shadow: none;
   }
 
   .searchbar {

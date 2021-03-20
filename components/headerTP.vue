@@ -1,10 +1,10 @@
 <template>
   <div class="container-fluid navbarSh">
-    <div class="container">
+    <div class="container align-items-center">
       <div class="justify-content-around d-flex">
         <ul class="list-inline d-flex first-nav align-content-end">
           <li><i class="fa fa-user-circle-o align-content-between" aria-hidden="true"></i><small><a href="#" class="mr-4 text-decoration-none">  &nbsp حساب من</a></small></li>
-          <li><small> <a href="#" class="text-decoration-none"><i class="fa fa-comments align-content-center" aria-hidden="true"></i>&nbsp چت های من  </a></small></li>
+          <li><a href="#" class="text-decoration-none"><i class="fa fa-comments align-content-center" aria-hidden="true"></i>&nbsp<small> چت های من    </small></a></li>
         </ul>
         <ul class="list-inline text-right d-flex first-nav">
           <li><small><a href="#" class="text-decoration-none">پشتیبانی</a></small></li>
@@ -23,7 +23,7 @@
 
 <style scoped>
   .navbarSh {
-    height: 25px !important;
+    height: 30px !important;
     background: rgba(235, 235, 235, 0.85);
     border : none;
     border-radius: 0px;
